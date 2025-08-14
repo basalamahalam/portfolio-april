@@ -5,7 +5,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-500 to-purple-600">
       <h1 className="text-4xl font-bold text-white">
         Tailwind CSS Berhasil! 🎉
       </h1>
