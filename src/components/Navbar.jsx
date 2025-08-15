@@ -33,21 +33,21 @@ const Navbar = () => {
   const getLinkClass = (path) => {
     return location.pathname === path
       ? "text-[#c75d2c] border-b-2 border-[#c75d2c] lg:py-2"
-      : "text-black hover:text-[#c75d2c] transition duration-500 border-b-2 border-transparent";
+      : "text-[#443826] hover:text-[#c75d2c] transition duration-500 border-b-2 border-transparent";
   };
 
   return (
     <>
-      <div className="fixed top-0 left-0 z-30 flex items-center justify-between w-full max-w-full px-10 py-3 mx-auto text-black bg-opacity-75 h-18 2xl:px-64 xl:px-32 lg:px-20 md:py-0">
+      <div className="fixed top-0 left-0 z-30 flex items-center justify-between w-full max-w-full px-10 py-3 mx-auto text-[#443826] bg-opacity-75 h-18 2xl:px-64 xl:px-32 lg:px-20 md:py-0">
         <Link to="/">
-          <p className="text-base font-semibold tracking-wider text-[#c75d2c] font-poppins md:text-lg">
-            Afrilla
+          <p className="text-base font-semibold tracking-wider text-[#c75d2c] font-lato md:text-lg">
+            Afrilla Muthi
           </p>
         </Link>
         <div className="flex items-center justify-start">
           <ul className="items-center hidden md:flex">
             <li
-              className={`p-8 font-poppins font-medium tracking-widest ${getLinkClass(
+              className={`p-8 font-poppins font-medium tracking-wider ${getLinkClass(
                 "/"
               )}`}
             >
@@ -56,7 +56,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li
-              className={`p-8 font-poppins font-medium tracking-widest ${getLinkClass(
+              className={`p-8 font-poppins font-medium tracking-wider ${getLinkClass(
                 "/resume"
               )}`}
             >
@@ -65,7 +65,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li
-              className={`p-8 font-poppins font-medium tracking-widest ${getLinkClass(
+              className={`p-8 font-poppins font-medium tracking-wider ${getLinkClass(
                 "/projects"
               )}`}
             >
@@ -74,7 +74,7 @@ const Navbar = () => {
               </Link>
             </li>
             <a href="mailto:basalamahalam2@gmail.com" className="p-4">
-              <button className="font-poppins px-6 py-1.5 tracking-wide rounded-md font-bold text-black">
+              <button className="font-poppins px-6 py-1.5 tracking-wide text-[#443826]">
                 Interested?
               </button>
             </a>
@@ -99,7 +99,7 @@ const Navbar = () => {
         <ul className="flex flex-col px-10">
           <li
             onClick={handleNav}
-            className={`mt-3 py-3 text-sm font-poppins font-medium tracking-widest ${getLinkClass(
+            className={`mt-3 py-3 text-sm font-poppins font-medium tracking-wider ${getLinkClass(
               "/"
             )}`}
           >
@@ -109,7 +109,7 @@ const Navbar = () => {
           </li>
           <li
             onClick={handleNav}
-            className={`py-3 text-sm font-poppins font-medium tracking-widest ${getLinkClass(
+            className={`py-3 text-sm font-poppins font-medium tracking-wider ${getLinkClass(
               "/resume"
             )}`}
           >
@@ -119,7 +119,7 @@ const Navbar = () => {
           </li>
           <li
             onClick={handleNav}
-            className={`py-3 text-sm font-poppins font-medium tracking-widest ${getLinkClass(
+            className={`py-3 text-sm font-poppins font-medium tracking-wider ${getLinkClass(
               "/projects"
             )}`}
           >
@@ -129,7 +129,7 @@ const Navbar = () => {
           </li>
           <li
             onClick={handleNav}
-            className="py-3 text-sm font-medium tracking-widest font-poppins"
+            className="py-3 text-sm font-medium tracking-wider font-poppins"
           >
             <a
               href="mailto:basalamahalam2@gmail.com"

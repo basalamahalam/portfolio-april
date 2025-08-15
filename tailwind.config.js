@@ -4,9 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        lato: ["Lato", "sans-serif"],
-        fira: ["Fira Sans", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
+        lato: ["Lato", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
       },
     },
